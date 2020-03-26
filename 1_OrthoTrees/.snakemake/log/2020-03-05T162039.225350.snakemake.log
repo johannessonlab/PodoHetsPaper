@@ -1,3 +1,0 @@
-NameError in line 255 of /Users/Lorena/Dropbox/PhD_UU/ProjectsCode/HetsPaper/1_OrthoTrees/OrthoTrees.smk:
-name 'wildcards' is not defined
-  File "/Users/Lorena/Dropbox/PhD_UU/ProjectsCode/HetsPaper/1_OrthoTrees/OrthoTrees.smk", line 255, in <module>

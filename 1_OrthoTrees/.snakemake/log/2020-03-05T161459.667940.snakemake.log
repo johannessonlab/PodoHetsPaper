@@ -1,3 +1,0 @@
-FileNotFoundError in line 254 of /Users/Lorena/Dropbox/PhD_UU/ProjectsCode/HetsPaper/1_OrthoTrees/OrthoTrees.smk:
-[Errno 2] No such file or directory: 'filtering/Podan2_1n.clean.txt'
-  File "/Users/Lorena/Dropbox/PhD_UU/ProjectsCode/HetsPaper/1_OrthoTrees/OrthoTrees.smk", line 254, in <module>

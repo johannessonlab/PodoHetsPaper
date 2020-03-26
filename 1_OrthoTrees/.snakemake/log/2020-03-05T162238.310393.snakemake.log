@@ -1,5 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 144 of /Users/Lorena/Dropbox/PhD_UU/ProjectsCode/HetsPaper/1_OrthoTrees/OrthoTrees.smk:
-Missing input files for rule getprotcomata:
-references/PODCO_genomic.gff3
-references/PODCO_genomic.fas
