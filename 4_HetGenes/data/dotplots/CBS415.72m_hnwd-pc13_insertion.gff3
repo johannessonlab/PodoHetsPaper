@@ -1,0 +1,8 @@
+CBS415.72m_chromosome_2.2	artemis	gene	1	250	 .	+	.	ID=Adenomus;Name=Adenomus
+CBS415.72m_chromosome_2.2_988466_1000529	artemis	gene	675	4860	.	-	.	ID=CBS415.72m.03957;Name=hnwd-pc13;pseudogene=unprocessed
+CBS415.72m_chromosome_2.2_988466_1000529	artemis	mRNA	675	4860	.	-	.	ID=CBS415.72m.03957-mRNA1;Name=hnwd-pc13-mRNA-1;Parent=CBS415.72m.03957;product_name=HNWD-pc13
+CBS415.72m_chromosome_2.2_988466_1000529	artemis	CDS	2593	4860	.	-	0	ID=CBS415.72m.03957-mRNA1-CDS2;Parent=CBS415.72m.03957-mRNA1
+CBS415.72m_chromosome_2.2_988466_1000529	artemis	exon	2593	4860	.	-	.	ID=CBS415.72m.03957-mRNA1-exon2;Parent=CBS415.72m.03957-mRNA1
+CBS415.72m_chromosome_2.2_988466_1000529	artemis	CDS	675	2551	.	-	0	ID=CBS415.72m.03957-mRNA1-CDS1;Parent=CBS415.72m.03957-mRNA1
+CBS415.72m_chromosome_2.2_988466_1000529	artemis	exon	675	2551	.	-	.	ID=CBS415.72m.03957-mRNA1-exon1;Parent=CBS415.72m.03957-mRNA1
+CBS415.72m_chromosome_2.2	artemis	gene	6123	6670	 .	+	.	ID=Amolops;Name=Amolops

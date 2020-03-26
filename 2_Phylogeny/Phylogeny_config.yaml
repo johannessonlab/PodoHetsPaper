@@ -1,0 +1,43 @@
+### ConcatPhylogeny: Making a phylogeny of the Podospora complex
+# ===========================================================================
+# Sandra Lorena Ament Velasquez
+# Johannesson Lab, Evolutionary Biology Center, Uppsala University, Sweden
+# 2019/12/19
+# ++++++++++++++++++++++++++++++++++++++++++++++
+
+SampleIDs: ["PaWa100p", "PaWa21m", "PaWa28m", "PaWa46p", "PaWa53m", "PaWa58m", "PaWa63p", "PaWa87p", "CBS112042p", "CBS237.71m", "CBS411.78m", "CBS415.72m", "PaTgp", "PaWa137m", "PaYp", "PcWa139m", "CBS124.78p", "CBS253.71p", "CBS307.81p", "CBS333.63p", "CBS451.62p", "PcWa131m", "PcWa132p", "PcWa133m", "Podan2", "comataT"]
+
+## --- Files from OrthoTrees.smk ---
+
+# Path to the alignments of all the orthologous one-to-one genes
+alignmentspath: "../1_OrthoTrees/alignments" # WARNING: The pipeline won't check for the presence of these
+# All trees file
+alltrees: "../1_OrthoTrees/results/SingleGeneTrees.tre"
+
+# Output of OrthoFinder in csv
+orthogroups: "../1_OrthoTrees/orthofinder/Orthogroups.csv" 
+# Orthogroup equivalence in Podan codes
+pa_orthogroups: "../1_OrthoTrees/filtering/Podan2_1n.clean.txt" 
+
+## ----------------------------------
+
+# Outgroup
+outgroup: ["CBS307.81p"]
+
+# Reference genes
+podan2genes: "path/to/Podan2_AssemblyScaffoldsGenesEd_gene.fas" # available at https://github.com/johannessonlab/SpokBlockPaper/tree/master/Annotation/data/Podan2
+
+# Number of sample orthologs
+SAMPLEsize: 1000
+
+# Support filter for collapsing branches
+MINsupport: 75
+
+## ----------------------------------
+## Scripts
+orthogrs_parser: "path/to/Phylogenetics/orthogrs_parser.py" # https://github.com/SLAment/Genomics/blob/master/Phylogenetics/orthogrs_parser.py
+query2hitseq: "path/to/BLAST/query2hitseq.py" # https://github.com/SLAment/Genomics/blob/master/BLAST/query2hitseq.py
+
+# ASTRAL jar (the lib directory should be at that same location too)
+astral: "bin/astral.5.7.3.jar"
+mappingfile: "data/spp_mapping.txt"

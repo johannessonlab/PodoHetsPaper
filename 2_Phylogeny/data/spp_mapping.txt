@@ -1,0 +1,8 @@
+podospora_anserina:PaWa100p,PaWa21m,PaWa28m,PaWa46p,PaWa53m,PaWa58m,PaWa63p,PaWa87p,PaTgp,PaWa137m,PaYp,Podan2
+podospora_pauciseta:CBS237.71m,CBS333.63p,CBS451.62p
+podospora_comata:comataT,PcWa139m,PcWa131m,PcWa132p,PcWa133m
+podospora_bellae_mahoneyi:CBS112042p
+podospora_pseudocomata:CBS415.72m
+podospora_pseudopauciseta:CBS411.78m
+podospora_pseudoanserina:CBS253.71p,CBS124.78p
+cercophora_samala:CBS307.81p

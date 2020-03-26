@@ -1,0 +1,27 @@
+### OrthoTrees: Getting orthologs of the Podospora complex
+# ===========================================================================
+# Sandra Lorena Ament Velasquez
+# Johannesson Lab, Evolutionary Biology Center, Uppsala University, Sweden
+# 2019/12/19-25
+# ++++++++++++++++++++++++++++++++++++++++++++++
+# Podan2 and PODCO are treated separately
+# SampleIDs: ["PaWa100p", "PaWa21m", "PaWa28m", "PaWa46p", "PaWa53m", "PaWa58m", "PaWa63p", "PaWa87p", "CBS112042p", "CBS237.71m", "CBS411.78m", "CBS415.72m", "PaTgp", "PaWa137m", "PaYp", "PcWa139m", "CBS124.78p", "CBS253.71p", "CBS307.81p", "CBS333.63p", "CBS451.62p", "PcWa131m", "PcWa132p", "PcWa133m", "Podan2", "comataT"]
+SampleIDs: ["PaWa100p"]
+
+assembliespath: "data" # assemblies and annotations
+
+# Data of P. anserina and P. comata reference genomes (see README)
+podan2: "references/Podan2_AssemblyScaffoldsmt.fa"
+podan2gff: "references/Podan2_AssemblyScaffoldsmtGenesEd_gh.gff"
+podan2genes: "references/Podan2_AssemblyScaffoldsGenesEd_gene.fas" # available at https://github.com/johannessonlab/SpokBlockPaper/tree/master/Annotation/data/Podan2
+comataT: "references/PODCO_genomic.fas" # It's deposited in the European Nucleotide Archive, [GCA_900290415.1], but see README
+comataTgff: "references/PODCO_genomic.gff3" # It's deposited in the European Nucleotide Archive, [GCA_900290415.1], but see README
+
+# Outgroup
+outgroup: ["CBS307.81p"]
+
+## Scripts
+gff2fasta: "/home/lore/scripts/Genomics/GenomeAnnotation/gffutils2fasta.py" # https://github.com/SLAment/Genomics/blob/master/GenomeAnnotation/gffutils2fasta.py
+orthogrs_parser: "/home/lore/scripts/Genomics/Phylogenetics/orthogrs_parser.py" # https://github.com/SLAment/Genomics/blob/master/Phylogenetics/orthogrs_parser.py
+query2hitseq: "/home/lore/scripts/Genomics/BLAST/query2hitseq.py" # https://github.com/SLAment/Genomics/blob/master/BLAST/query2hitseq.py
+fastaconcat: "/home/lore/scripts/Genomics/FastaManipulation/fastaconcat.py" # https://github.com/SLAment/Genomics/blob/master/FastaManipulation/fastaconcat.py

@@ -1,0 +1,33 @@
+### TreeCertainty: Exploring the phylogenetic signal amongst orthologs of the *Podospora* complex
+# ===========================================================================
+# Sandra Lorena Ament Velasquez
+# Johannesson Lab, Evolutionary Biology Center, Uppsala University, Sweden
+# 2019/12/29
+# ++++++++++++++++++++++++++++++++++++++++++++++
+
+SampleIDs: ["PaWa100p", "PaWa21m", "PaWa28m", "PaWa46p", "PaWa53m", "PaWa58m", "PaWa63p", "PaWa87p", "CBS112042p", "CBS237.71m", "CBS411.78m", "CBS415.72m", "PaTgp", "PaWa137m", "PaYp", "PcWa139m", "CBS124.78p", "CBS253.71p", "CBS307.81p", "CBS333.63p", "CBS451.62p", "PcWa131m", "PcWa132p", "PcWa133m", "Podan2", "comataT"]
+onerepperspp: ["CBS112042p", "CBS237.71m", "CBS411.78m", "CBS415.72m", "CBS253.71p", "CBS307.81p", "Podan2", "comataT"]
+
+podan2gff: "path/to/Podan2_AssemblyScaffoldsmtGenesEd.gff" # available inhttps://github.com/johannessonlab/SpokPaper/tree/master/Fig1_3SppNetwork/references
+
+## --- Files from OrthoTrees.smk ---
+
+# Path to the alignments of all the orthologous one-to-one genes
+alignmentspath: "../1_OrthoTrees/alignments" # WARNING: The pipeline won't check for the presence of these
+# Path to the trees of all the orthologous one-to-one genes
+treespath: "../1_OrthoTrees/iqtree" # WARNING: The pipeline won't check for the presence of these
+# Names of the orthologs in terms of the P. anserina genes 
+panames: "../1_OrthoTrees/filtering/Podan2_1n.clean.txt"
+
+# How many orthologs are we dealing with (number of lines in Podan2_1n.clean.txt)
+num_orthos: 6302
+# ----------------------------------
+# Support filter for collapsing branches
+MINsupport: [0, 50, 75, 95]
+# ----------------------------------
+## Scripts
+TreeCertainty: "scripts/TreeCertainty.R"
+TC_env: "envs/TCplot.yaml"
+
+# ASTRAL jar (the lib directory should be at that same location too)
+astral: "path/to/bin/astral.5.7.3.jar"

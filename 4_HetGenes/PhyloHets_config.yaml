@@ -1,0 +1,36 @@
+# Configuration file of the PhyloHets.smk pipeline
+
+SampleIDs: ["PaWa100p", "PaWa21m", "PaWa28m", "PaWa46p", "PaWa53m", "PaWa58m", "PaWa63p", "PaWa87p", "CBS112042p", "CBS237.71m", "CBS411.78m", "CBS415.72m", "PaTgp", "PaWa137m", "PaYp", "PcWa139m", "CBS124.78p", "CBS253.71p", "CBS307.81p", "CBS333.63p", "CBS451.62p", "PcWa131m", "PcWa132p", "PcWa133m", "Podan2", "PcTdp"]
+
+## Single marker alignments
+markers: ["HetZ_PaPlp1.fa", 
+          "HetZ_PaSec9.fa", 
+          "HetZ_PaPlp1_noOutgr.fa",
+          "HetZ_PaSec9_noOutgr.fa",
+          "HetZ_haplotypes_trim_noOutgr.fa",
+          "HetZ_PaPlp1+PaSec9_noOutgr.fa",
+          "HetS.fa",
+          "HetC_alleles.fa", 
+          "HetC_alleles_noOutgr.fa",
+          "hnwds_include.fa"] 
+
+markerspath: "data"
+
+# Sequence pairs for dotplots
+
+pathsdotplotdata: "data/dotplots/"
+
+# First the insertion and then the self-alignment (order is important for the R script)
+seqsdotplots_query: ["Podan2_hnwd-pc13.fa", "CBS415.72m_hnwd-pc13_insertion.fa"]
+seqsdotplots_ref: ["CBS415.72m_hnwd-pc13.fa", "CBS415.72m_hnwd-pc13_insertion.fa"]
+gffs: ["CBS415.72m_hnwd-pc13.gff3", "Podan2_hnwd-pc13.gff3", "CBS415.72m_hnwd-pc13_insertion.gff3"]
+
+# Minimum bootstrap to retain values in tree
+minbb: 70
+
+# Outgroup clade
+outgroup: ["CBS307.81p"]
+
+# Script
+dotplotenv: "envs/dotplot.yaml"
+dotplot: "scripts/DotplotHnwd.R"

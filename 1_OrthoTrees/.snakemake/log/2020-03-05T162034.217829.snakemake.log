@@ -1,0 +1,3 @@
+IncompleteCheckpointException in line 245 of /Users/Lorena/Dropbox/PhD_UU/ProjectsCode/HetsPaper/1_OrthoTrees/OrthoTrees.smk:
+The requested checkpoint output is not yet created.If you see this error, you have likely tried to use checkpoint output outside of an input function, or you have tried to call an input function directly via <function_name>(). Please check the docs at https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#data-dependent-conditional-execution and note that the input function in the example rule 'aggregate' is NOT called, but passed to the rule by name, such that Snakemake can call it internally once the checkpoint is finished.
+  File "/Users/Lorena/Dropbox/PhD_UU/ProjectsCode/HetsPaper/1_OrthoTrees/OrthoTrees.smk", line 245, in <module>
