@@ -8,7 +8,7 @@
 SampleIDs: ["PaWa100p", "PaWa21m", "PaWa28m", "PaWa46p", "PaWa53m", "PaWa58m", "PaWa63p", "PaWa87p", "CBS112042p", "CBS237.71m", "CBS411.78m", "CBS415.72m", "PaTgp", "PaWa137m", "PaYp", "PcWa139m", "CBS124.78p", "CBS253.71p", "CBS307.81p", "CBS333.63p", "CBS451.62p", "PcWa131m", "PcWa132p", "PcWa133m", "Podan2", "comataT"]
 onerepperspp: ["CBS112042p", "CBS237.71m", "CBS411.78m", "CBS415.72m", "CBS253.71p", "CBS307.81p", "Podan2", "comataT"]
 
-podan2gff: "path/to/Podan2_AssemblyScaffoldsmtGenesEd.gff" # available inhttps://github.com/johannessonlab/SpokPaper/tree/master/Fig1_3SppNetwork/references
+podan2gff: "path/to/Podan2_AssemblyScaffoldsmtGenesEd.gff" # available in https://github.com/johannessonlab/SpokPaper/tree/master/Fig1_3SppNetwork/references
 
 ## --- Files from OrthoTrees.smk ---
 
